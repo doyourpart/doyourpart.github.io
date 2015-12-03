@@ -24,15 +24,18 @@
 
   <body  ng-app="mainApp" ng-controller="EmployeeCtrl">
 
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=138314276534190";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="navbar-brand" href="#">Chennai Relief Funds</a>
         </div>
         
@@ -42,9 +45,12 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Total Funds : {{scope.total}}</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <h1>Namma Chennai</h1>
+        <p>Help chennai get back on its feet. For those who can't physically be there to help, here are a few funds that you can donate to to make a difference. Maximize your donations by finding organizations that would match your donations.</p>
+        <p>
+          <div class="fb-like" data-href="http://doyourpart.github.io/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+        </p>
+
       </div>
     </div>
 
@@ -53,8 +59,14 @@
       <div class="row">
         <div class="col-md-8">
            <table class="table">
+              <tr>
+                <th>Fund</th>
+                <th>Matched By</th>
+                <th>Donation Link</th>
+              </tr>
               <tr ng-repeat="item in data">
                 <td>{{item.name}}</td>
+                <td>{{item.matchedBy}}</td>
                 <td><a class="btn btn-primary btn-lg" href="{{item.link}}" role="button">Donate &raquo;</a></td>
               </tr>
           </table>
@@ -63,17 +75,8 @@
           <a class="twitter-timeline" href="https://twitter.com/hashtag/chennairains" data-widget-id="672358123407978496">#chennairains Tweets</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
-      </div>
-      <div id="twitter">
-      </div>
-
-
-
-      <hr>
-
-      <footer>
-        <p>&copy; 2015 Company, Inc.</p>
-      </footer>
+      </div>  
+      <div class="fb-comments" data-href="http://doyourpart.github.io/" data-numposts="5"></div>
     </div> <!-- /container -->
 
  

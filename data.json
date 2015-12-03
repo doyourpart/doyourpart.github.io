@@ -1,27 +1,39 @@
 [
   {
-    "name": "Zomato Chennai Relief Fund",
-    "link": "https://www.zomato.com/chennai/chennai-flood-relief-nungambakkam",
-    "currency": "rupee"
-  },
-  {
     "name": "Milaap - Cudalore flood",
     "link": "https://milaap.org/campaigns/cuddaloreflood",
+    "matchedBy": "",
     "currency": "rupee"
   },
   {
     "name": "Milaap - Chennai flood",
     "link": "https://milaap.org/campaigns/Chennaifloods",
+    "matchedBy": "",
     "currency": "rupee"
   },
   {
-    "name": "Go Fund Me 1",
+    "name": "Go Fund Me Campaign 1",
     "link": "https://www.gofundme.com/fgcyx6yk"  ,
+    "matchedBy": "",
     "currency": "dollar"
   },
   {
-    "name": "Go Fund Me 2",
+    "name": "Go Fund Me Campaign 2",
     "link": "https://www.gofundme.com/helpchennai",
+    "matchedBy": "",
     "currency": "dollar"
-  }  
+  },
+  {
+    "name": "Zomato Chennai Relief Fund",
+    "link": "https://www.zomato.com/chennai/chennai-flood-relief-nungambakkam",
+    "matchedBy": "",
+    "currency": "rupee"
+  },
+  {
+    "name": "AID India",
+    "link": "https://secure.aidindia.org/donate/tnfloods",
+    "matchedBy": "Microsoft",
+    "currency": "dollar"
+  }
+  
 ]
