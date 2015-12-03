@@ -34,6 +34,12 @@
     "link": "https://secure.aidindia.org/donate/tnfloods",
     "matchedBy": "Microsoft",
     "currency": "dollar"
+  },
+  {
+    "name": "Bhumi",
+    "link": "http://bhumi.org.in/chennai-floods/",
+    "matchedBy": "",
+    "currency": ""
   }
   
 ]
